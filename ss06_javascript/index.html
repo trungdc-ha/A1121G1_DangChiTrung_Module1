@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 onclick="alert('Hello')">A1121I1</h1> <!--Nhung JS truc tiep trong the HTMML-->
+    <button onclick="showAlert()">Alert</button>
+    <button onclick="showPrompt()">Prompt</button>
+    <button onclick="showConfirm()">Confirm</button>
+
+    <!--viết code javascirpt trong thẻ <script>-->
+    <script>
+        function showAlert(){
+            alert('Hello các bạn');
+        }
+
+
+        function showPrompt(){
+            var name = prompt("Bạn tên gì ?");
+            alert("Chào bạn " + name);
+        }
+
+        function showConfirm(){
+            var check = confirm("Bạn có phải ở Đà Nẵng không ?")
+            alert(check);
+        }
+
+        let number = 6 + 9;
+        /*
+        * let là từ khóa
+        * number là biến
+        * "=" toán tử gán
+        * 6 và 9: toán hạng
+        * + toán tử số học.
+        * */
+    </script>
+
+
+    <!--Gọi 1 file JS bên ngoài qua thuộc tính src của thẻ script-->
+    <script src="myJS.js"></script>
+
+    <!--tải 1 file js từ môi trường internet-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+</html>
