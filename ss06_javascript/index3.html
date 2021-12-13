@@ -7,7 +7,15 @@
 <body>
     <h1 id="myTitle">Hello</h1>
     <p>Hà Nội</p>
+    <p>Hà Nội</p>
+    <p>Hà Nội</p>
+
+    <input type="text" id="txtName" />
+    <button onclick="getName()">Submit</button>
+    <span style="color: red" id="result"></span>
+
     <script>
+        //cach 1
         // document.write("Chào các bạn!");
         // document.write("<h1>A1121I1</h1>");
 
@@ -19,7 +27,14 @@
         document.getElementById("myTitle").innerHTML = "ABC"; //chèn văn bản
         document.getElementById("myTitle").innerHTML = "<button>Click</button>"; //chèn HTML
 
+        //cách 4
         console.log("đây nội dung để kiểm thử");
+
+        //cách 5 lấy giá trị từ ô input
+        function getName(){
+            let name = document.getElementById("txtName").value;
+            document.getElementById("result").innerText = name;
+        }
 
     </script>
 </body>
