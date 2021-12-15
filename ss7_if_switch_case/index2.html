@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+   * Viết chương trình:
+   * Cho người dùng nhập vào điểm thi và nhập tỉ lệ vắng nghỉ
+   * Nếu điểm thi >= 75
+   *  - Nếu tỉ lệ vắng nghỉ < 10 thì thông báo pass khóa học.
+   *  - Nếu tỉ lệ vắng nghỉ >=10 thì nói chuyện với coach.
+   * */
+
+    let point = parseInt(prompt("Input point:"));
+    let absent = parseInt(prompt("Input absent:"));
+
+    if( point >= 75) {//70
+
+        if(absent < 10) {
+            alert("Pass");
+            alert("Continue module 2");
+        } else {
+            alert("consider with coach..")
+        }
+
+    } else {
+        alert("Fail");
+    }
+</script>
+</body>
+</html>
