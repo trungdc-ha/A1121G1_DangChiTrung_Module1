@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = "a";
+    let y = "b";
+    let z = "c";
+    let arr = ["a", "b", "c", "d", "e"]; //khai báo mảng.
+    /*lưu 1 bảng chữ cái vào 1 biến
+    * ==> kiêu dữ liệu mới (1 biến lưu được nhiều giá trị)
+    * */
+
+    let arr1 = new Array("a", "b", "c", "d", "e");
+    let arr2 = new Array("a", 3, true);
+    let arr3 = Array(1, 2, 3, 4, 5, 6);
+    let arr4 = Array(11);
+    let arr5 = [11];
+    //document.write(arr4.length); //99 phần tử
+    /*Mỗi phần tử của arr4 đang có giá trị là ?*/
+
+    /*cú pháp truy xuất phần tử của mảng.
+    thông qua index: myArr[index]
+    */
+    // console.log(arr4[arr4.length - 1])
+    // document.write(arr5.length) //1
+
+    /*Cập nhật giá trị phần tử mảng*/
+    arr1[0] = "w";
+    console.log(arr1[0]);
+</script>
+</body>
+</html>
