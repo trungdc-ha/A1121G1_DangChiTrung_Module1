@@ -6,7 +6,14 @@
 </head>
 <body>
 <script>
-    let arr = [4, 2, 8];
+    let arr = [4, 2, 8, 6];
+
+    /*Hàm nối mảng*/
+    let arr1 = [11, 12, 13];
+    //[4, 2, 8, 6, 11, 12, 13];
+    let arr2 = arr.concat(arr1);
+    console.log(arr2);
+    console.log(arr);
 
     /*Thêm phần tử 9 vào đầu mảng*/
     //arr.unshift(9);
@@ -31,15 +38,49 @@
     //arr.splice(2,0,9); //chèn tại index 2 giá trị số 9  - (index cần chèn,0 - không xóa,giá trị cần chèn..)
 
     //4,2,8 ==> 11,12,4,2,8
-    arr.splice(0,0,11,12);
+    //arr.splice(0,0,11,12);
 
     /*Chuyển mảng thành chuỗi */
+    // let str = arr.toString();
+    // console.log(str); //str = "4,2,8";
+
+    // let str = arr.join("-");
+    // console.log(str); //str = "4-2-8";
 
     /*Hàm đảo mảng*/
+    // arr.reverse();
 
     /*Hàm sắp xếp*/
+    // arr2.sort(function (a, b) {
+    //     return a - b;
+        // if (a > b) {
+        //     return 1;
+        // } else if (a < b) {
+        //     return -1;
+        // } else {
+        //     return 0;
+        // }
+        //cài đặt quy luật sắp xếp.
+        /*
+        a: 8
+        b: 6
+        if(a>b){
+          ==> a - b > 0
+        } else (a < b){
+          ==> a - b < 0
+        } else {
+          ==> a - b =0
+        }
+         */
+    // });
 
-    /*Hàm nối mảng*/
+    /*Hàm tìm kiếm*/
+    /*
+    * Nếu tồn tại x trong mảng thì trả về index của x
+    * Nếu x không tồn tại trong mảng thì trả về -1
+    * */
+    let index = arr.indexOf(8);
+    console.log(index);
 
     console.log(arr);
 
