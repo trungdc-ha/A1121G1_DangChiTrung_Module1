@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let x = 10; //khai báo ngoài hàm - toàn cục
+
+    // function increase(){
+    //     let x = 2; //khai báo trong hàm - cục bộ
+    //     x++;
+    //     document.write(x);//3
+    // }
+
+    // function increase(x){ //tham số - biến cục bộ
+    //     x++;
+    //     document.write(x);//6
+    // }
+
+    function increase(x) { //tham số - biến cục bộ
+        var y = 99;
+        x++;
+        document.write(x);//6
+        console.log("y' = " + y); //99
+    }
+
+    increase(5);
+    console.log("x = " + x); //10
+    console.log("x = " + y); //error - is not defined
+
+    {
+
+    }
+</script>
+</body>
+</html>

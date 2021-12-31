@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*Hàm có trả về*/
+    function increase(x){
+        x++;
+        document.write(x);
+        return 99; //chạy tới đây là thoát hàm
+        document.write("OK")
+        return 88;
+    }
+
+    let result = increase(9); //result = x;
+    console.log(result); //88 99
+</script>
+</body>
+</html>
