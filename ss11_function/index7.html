@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function isPrime(number) {
+    //     let check;
+    //     let result;
+    //     for (let i = 2; i < number; i++) {
+    //         if(number % i == 0){
+    //             check = 1;
+    //             break;
+    //         } else {
+    //             check = 0;
+    //         }
+    //     }
+    //     if(check == 1){
+    //         result = "Không phải số nguyên tố";
+    //     } else {
+    //         result = "Số nguyên tố";
+    //     }
+    //
+    //     return result;
+    // }
+
+    function isPrime(number) {
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    for(let num = 2; num <= 10000; num++){
+        if(isPrime(num)){
+            document.write(num + " ");
+        }
+    }
+
+    //6: 2 3 4 5
+    //7: 2 3 4 5 6
+
+</script>
+</body>
+</html>
