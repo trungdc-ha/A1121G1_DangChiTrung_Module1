@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class DienThoai {
+        // constructor(ten, hangSX) {
+        //     this.ten = ten;
+        //     this.hangSX = hangSX;
+        // }
+        constructor() {
+        }
+
+        goiDien(){
+            document.write(this.ten + " đang gọi điện <br>");
+        }
+
+        //Setter - cập nhật giá trị cho thuộc tính.
+        setTen(tenMoi){
+            this.ten = tenMoi;
+        }
+
+        //Getter - lấy thông tin của thuộc tính
+        getTen(){
+            return this.ten;
+        }
+    }
+
+    /*B2 tạo đối tượng*/
+    // let dienThoai1 = new DienThoai("Iphone 12", "Apple");
+    let dienThoai1 = new DienThoai();
+    // dienThoai1.ten = "Iphone 13"; //truy cập trực tiếp
+    dienThoai1.setTen("SamSung"); //cập nhật thuộc tính qua setter
+    dienThoai1.goiDien();
+
+    /*Hiển thị tên tại console: */
+    // console.log(dienThoai1.ten);
+    console.log(dienThoai1.getTen())
+
+    // let dienThoai2 = new DienThoai("Samsung S22", "Samsung");
+    // dienThoai2.goiDien();
+</script>
+</body>
+</html>
